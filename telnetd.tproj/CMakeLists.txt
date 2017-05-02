@@ -20,6 +20,7 @@ set(telnetd_sources
 add_darling_executable(telnetd ${telnetd_sources})
 target_link_libraries(telnetd telnet ncurses)
 
-install(TARGETS telnetd DESTINATION libexec/darling/usr/sbin)
+install(TARGETS telnetd DESTINATION libexec/darling/usr/libexec)
 install(FILES telnet.8 DESTINATION libexec/darling/usr/share/man/man8)
+#install(FILES telnet-darling.plist DESTINATION libexec/darling/System/Library/LaunchDaemons)
 

@@ -83,5 +83,5 @@ telnet_gets(const char *prompt __unused, char *result __unused, int length __unu
 {
 	return(NULL);
 }
-#endif	/* ENCRYPTION */
+//#endif	/* ENCRYPTION */
 #endif	/* AUTHENTICATION */

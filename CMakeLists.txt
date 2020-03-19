@@ -1,6 +1,6 @@
 project(remote_cmds)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -nostdinc")
+add_definitions(-w -nostdinc)
 
 add_subdirectory(logger.tproj)
 add_subdirectory(domainname.tproj)

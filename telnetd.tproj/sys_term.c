@@ -423,6 +423,10 @@ spcset(int func, cc_t *valp, cc_t **valpp)
  * Returns the file descriptor of the opened pty.
  */
 char alpha[] = "0123456789abcdefghijklmnopqrstuv";
+#ifdef DARLING
+// Apple should have this too...
+extern
+#endif
 char line[16];
 
 int
